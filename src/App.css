@@ -1,42 +1,135 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #c9ddff;
+  margin: auto;
+}
+
+h1 {
   text-align: center;
+  color: #535050;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.loader {
+  position: absolute;
+  top: 40px;
+  bottom: 118px; 
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+  font-size: 2rem;
+ 
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.loader>p{
+  background-color: transparent;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.content {
+  height: 78%;
+  /* border: 2px solid red; */
+  overflow-y: auto;
+  width: 100%;
+}
+
+.data-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.data-list li {
+  background-color: #FFFFFF;
+  margin: 5px 10px;
+  font-size: large;
+  padding: 10px;
+  border-radius: 5px;
+  line-height: 1.75; 
+}
+
+.form-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: white;
+  border-top: 1px solid #ccc;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  /* border: 3px solid teal; */
+  padding: 10px;
+}
+
+textarea {
+  resize: none;
+  width: 50%;
+  margin: auto;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+}
+
+textarea::placeholder {
+  font-size: 16px;
+  position: relative; /* Adjust the placeholder font size here */
+  top: 3px;
+}
+
+button {
+  width: 300px;
+  margin: auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 769px) {
+  .container {
+    width: 75%;
   }
-  to {
-    transform: rotate(360deg);
+
+  textarea {
+    width:50%;
+   
+  }
+  .form-container{
+    width: 75%;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  textarea {
+    width: 100%;
+  }
 
-.read-the-docs {
-  color: #888;
+  button {
+    width: 100%;
+    font-size: small;
+  }
 }
