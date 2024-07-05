@@ -1,8 +1,9 @@
-# React + Vite
+# Social Media Post Generator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+After installing the app hit the below command to run the app
 
-Currently, two official plugins are available:
+## npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Glimpse of app
+
+![Screenshot 2024-07-06 015955](https://github.com/SVickyPawar/upskill/assets/97332040/674b95f4-fa1b-47ca-aa88-106c27871aee)
