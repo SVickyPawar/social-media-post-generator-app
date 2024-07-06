@@ -98,7 +98,8 @@ const App = () => {
         <ul className="data-list" ref={listRef}>
           {fetchedData.map((item, index) => (
             <li key={index}>
-              <strong><span style={{ backgroundColor: 'white' }}>👉</span></strong>  {item.post} <br />
+              <strong style={{ backgroundColor: 'white' }}> ✏️ {item.prompt} </strong> 
+              <p style={{ backgroundColor: 'white',marginTop:'5px' }}>👉 {item.post}</p>
             </li>
           ))}
         </ul>
