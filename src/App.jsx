@@ -62,7 +62,7 @@ const App = () => {
       setLoading(false); // Stop loader
     }
   };
-
+  // GET function
   const getData = async () => {
     try {
       setLoading(true); // Start loader
